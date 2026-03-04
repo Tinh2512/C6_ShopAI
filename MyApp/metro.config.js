@@ -1,10 +1,10 @@
+// metro.config.js
 const { getDefaultConfig, mergeConfig } = require('@react-native/metro-config');
-const { withNativeWind }               = require('nativewind/metro');
+const { withNativeWind } = require('nativewind/metro');
 
-const config = mergeConfig(getDefaultConfig(__dirname), {
-  /* add any custom metro config here */
-});
+const config = mergeConfig(getDefaultConfig(__dirname), {});
 
 module.exports = withNativeWind(config, {
-  input: './global.css',   // NativeWind v4 requires a CSS entry point
+  input:  './global.css',
+  config: './tailwind.config.js', // ← thêm dòng này
 });
