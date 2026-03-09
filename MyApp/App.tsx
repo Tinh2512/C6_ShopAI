@@ -1,11 +1,13 @@
 import React from 'react';
-import { ThemeProvider }     from './src/theme';
-import { ProductListScreen } from './src/screens/ProductListScreen';
+import { ThemeProvider }  from './src/theme';
+import { RootNavigator }  from './src/navigation/RootNavigator';
+import { Toast }          from './src/components/base/Toast';
 
 export default function App() {
   return (
     <ThemeProvider>
-      <ProductListScreen />
+      <RootNavigator />
+      <Toast />
     </ThemeProvider>
   );
 }
