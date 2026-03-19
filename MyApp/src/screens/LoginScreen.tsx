@@ -185,65 +185,6 @@ export const LoginScreen: React.FC = () => {
             </TouchableOpacity>
           </Stack>
 
-          {/* ── Component showcase ── */}
-          <Card variant="outlined" style={{ marginTop: spacing[8] }}>
-            <DSText variant="h4" weight="bold" style={{ marginBottom: spacing[3] }}>
-              Component Showcase
-            </DSText>
-
-            {/* Badges */}
-            <DSText variant="label" weight="medium" color={colors.textSecondary} style={{ marginBottom: spacing[2] }}>
-              Badges
-            </DSText>
-            <Stack direction="row" spacing={spacing[2]} wrap style={{ marginBottom: spacing[4] }}>
-              <Badge label="Default" variant="default" />
-              <Badge label="Success" variant="success" />
-              <Badge label="Error"   variant="error" />
-              <Badge label="Warning" variant="warning" />
-              <Badge label="Info"    variant="info" />
-            </Stack>
-
-            {/* Buttons */}
-            <DSText variant="label" weight="medium" color={colors.textSecondary} style={{ marginBottom: spacing[2] }}>
-              Button Variants
-            </DSText>
-            <Stack direction="column" spacing={spacing[2]} style={{ marginBottom: spacing[4] }}>
-              <Button label="Primary Button"   variant="primary"   size="md" />
-              <Button label="Secondary Button" variant="secondary" size="md" />
-              <Button label="Outline Button"   variant="outline"   size="md" />
-              <Button label="Ghost Button"     variant="ghost"     size="md" />
-              <Button label="Loading State"    variant="primary"   size="md" loading />
-              <Button label="Disabled State"   variant="primary"   size="md" disabled />
-            </Stack>
-
-            {/* Button sizes */}
-            <DSText variant="label" weight="medium" color={colors.textSecondary} style={{ marginBottom: spacing[2] }}>
-              Button Sizes
-            </DSText>
-            <Stack direction="column" spacing={spacing[2]}>
-              <Button label="Large"  variant="primary" size="lg" />
-              <Button label="Medium" variant="primary" size="md" />
-              <Button label="Small"  variant="primary" size="sm" />
-            </Stack>
-          </Card>
-
-          {/* ── Typography showcase ── */}
-          <Card variant="default" style={{ marginTop: spacing[4], marginBottom: spacing[8] }}>
-            <DSText variant="h4" weight="bold" style={{ marginBottom: spacing[3] }}>
-              Typography
-            </DSText>
-            <Stack direction="column" spacing={spacing[2]}>
-              <DSText variant="h1" weight="bold">Heading 1</DSText>
-              <DSText variant="h2" weight="bold">Heading 2</DSText>
-              <DSText variant="h3" weight="semibold">Heading 3</DSText>
-              <DSText variant="h4" weight="semibold">Heading 4</DSText>
-              <DSText variant="body">Body text — regular weight for reading comfort.</DSText>
-              <DSText variant="bodySmall">Body Small — supporting content.</DSText>
-              <DSText variant="caption">Caption — metadata and footnotes.</DSText>
-              <DSText variant="label" weight="medium">Label — form fields and UI elements.</DSText>
-            </Stack>
-          </Card>
-
         </Container>
       </ScrollView>
     </SafeAreaView>
